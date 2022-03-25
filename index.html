@@ -1,54 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Resume</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="container">
-          <header class="header">
-            <div class="headear__content">
-              <div class="header__photo">
-                <img src="/images/avatar.jpg" alt="avatar" />
-              </div>
-              <div class="header__info">
-                <div class="header__title">
-                  <div class="header__title-name">
-                    <h1>Yauhnei <br><span class="surname">Dubina</span></h1>
-                    <h2>Junior <span>Frontend</span> Developer</h2>
-                  </div>
-                  <div class="header__title-contacts">
-                    <ul class="header_contacts-list">
-                      <li class="header__contacts-item">
-                        <a href="#"
-                          ><img src="/images/Phone.png" alt="" srcset=""
-                        /> <p>+375257638796</p>
+      <div class="container">
+        <header class="header">
+          <div class="headear__content">
+            <div class="header__photo">
+              <img src="/images/avatar.jpg" alt="avatar" />
+            </div>
+            <div class="header__info">
+              <div class="header__title">
+                <div class="header__title-name">
+                  <h1>Yauhnei <br /><span class="surname">Dubina</span></h1>
+                  <h2>Beginner <span>Frontend</span> Developer</h2>
+                </div>
+                <div class="header__title-contacts">
+                  <ul class="header_contacts-list">
+                    <li class="header__contacts-item">
+                      <a href="#"
+                        ><img src="/images/Phone.png" alt="" srcset="" />
+                        <p>+375257638796</p>
                       </a>
-                      </li>
-                      <li class="header__contacts-item"><a href="https://t.me/eug_nik">
-                          <img src="/images/telegram.png" alt="" srcset="">
-                          <p>Telegram</p>
-                      </a></li>
-                      <li class="header__contacts-item"><a href="#"><img src="/images/email.png" alt="" srcset="">
-                      <p>jenka26122@gmail.com</p></a></li>
-                      <li class="header__contacts-item"><a href="#">
-                          <img src="/images/3440906-direction-location-map-marker-navigation-pin_107531.png" alt="" srcset="">
-                          <p>Brest,Belarus</p>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>              
+                    </li>
+                    <li class="header__contacts-item">
+                      <a href="https://t.me/eug_nik">
+                        <img src="/images/telegram.png" alt="" srcset="" />
+                        <p>Telegram</p>
+                      </a>
+                    </li>
+                    <li class="header__contacts-item">
+                      <a href="#"
+                        ><img src="/images/email.png" alt="" srcset="" />
+                        <p>jenka26122@gmail.com</p></a
+                      >
+                    </li>
+                    <li class="header__contacts-item">
+                      <a href="#">
+                        <img
+                          src="/images/3440906-direction-location-map-marker-navigation-pin_107531.png"
+                          alt=""
+                          srcset=""
+                        />
+                        <p>Brest,Belarus</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </header>
-         
-      
+          </div>
+        </header>
+        <section class="codeExample">
+          <h3><span>Code</span> Example</h3>
+          <pre>
+                 <code>
+  const test = document.querySelectorAll(".circle-container");
+  test.forEach((item) => {
+    const circleBar = new ProgressBar.Circle(item, {
+        color: "#1c2630",
+        strokeWidth: 10,
+        trailWidth: 10,
+        trailColor: "#0178d6",
+                                });
+      circleBar._container.id == "circle-container"
+            ? circleBar.animate(0.5, {
+                  duration: 1500,
+            })
+            : circleBar.animate(0.75, {
+                  duration: 1500,
+                                      });
+            });</code>
+             </pre>
+        </section>
+        <section class="aboutMe">
+          <h3><span>About</span> Me</h3>
+          <p>
+            Hi,My name is Yauheni and i am a beginner Frontend developer.I've
+            been developing landing pages and single-page application for my own
+            purposes.I don't have experience in commercial development, but,
+            currently, i am iproving my web development skils to find a job.My
+            goal is get a job offer and start my professional developer cereer
+            in the near future.
+          </p>
+        </section>
+        <section class="skills">
+          <h3>Knowlage <span>Skills</span></h3>
+          <div class="knowlageSkills__content">
+            <div class="knowlageSkills__item"></div>
+            <div class="knowlageSkills__item"></div>
+            <div class="knowlageSkills__item"></div>
+            <div class="knowlageSkills__item"></div>
+            <div class="knowlageSkills__item"></div>
+            <div class="knowlageSkills__item"></div>
+          </div>
+        </section>
+        <section class="education">
+
+        </section>
+        <section class="courses"></section>
+        <section class="languages"></section>
+        <section class="hobbys"></section>
+        <footer class="footer"></footer>
       </div>
-      </div>
- <script type="module" src="./script.js"></script>
-</body>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
