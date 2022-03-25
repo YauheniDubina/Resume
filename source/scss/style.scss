@@ -86,10 +86,19 @@ h6 {
   max-width: 1500px;
   margin: 0 auto;
   color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.container > *{
+     background-color: #1c2630;
+  border-radius: 50px;
 }
 .header {
-  background-color: #1c2630;
-  border-radius: 50px;
+ 
+  grid-area: 1 / 1 / 2 / 7;
 
   // .header_contacts-list
 
@@ -200,4 +209,73 @@ h6 {
     gap: 50px;
     align-items: center;
   }
+}
+
+
+.codeExample {
+    grid-area: 2 / 1 / 5 / 5;
+    min-height: 630px;
+    h3 {
+        font-size: 60px;
+        text-align: center;
+        padding: 15px 0 0 0;
+        span{
+            color: #0178d6;
+        }
+    }
+    code{
+        text-align:  left;
+        line-height: 30px;
+        font-size: 15px;
+        color: #0178d6;
+       
+      }
+      pre{
+        max-width: 600px;
+        background: #333 none repeat scroll 0 0;
+        border: 2px solid #9d9d9d;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 60%);
+        color: #ffffff;
+        display: block;
+        font-family: Courier New;
+        font-size: 150%;
+        margin: 10px auto;
+        
+       height: 85%;
+      }
+ 
+}
+.aboutMe {
+    grid-area: 2 / 5 / 4 / 7;
+    h3 {
+        font-size: 60px;
+        text-align: center;
+        padding: 15px 0 0 0;
+        span{
+            color: #0178d6;
+        }
+      }
+      p {
+        font-size: 20px;
+        text-align: justify;
+        margin: 15px auto 0px auto;
+        padding: 0 30px;
+        line-height: 35px;
+      }    
+   
+}
+.skills {
+    grid-area: 4 / 5 / 6 / 7; 
+}
+
+.education { grid-area: 5 / 1 / 9 / 3;
+}
+.courses { grid-area: 5 / 3 / 8 / 5;
+}
+.languages {grid-area: 6 / 5 / 8 / 7;
+}
+.hobbys { grid-area: 8 / 3 / 9 / 7;
+}
+.footer { grid-area: 9 / 1 / 10 / 7;
 }
