@@ -89,3 +89,108 @@ h6 {
 }
 
 /*--------------------*/
+.wrapper {
+  background-color: #0178d6;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #1c2630;
+  border-radius: 50px;
+}
+.header__photo img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #0178d6;
+}
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 90px;
+}
+.header__title-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__title-name h1 {
+  font-size: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__title-name h2 {
+  font-size: 60px;
+}
+.header__title-name span {
+  color: #0178d6;
+}
+.header__title-contacts {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.header__title-contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 0 0 20px 0;
+}
+.header__title-contacts a img {
+  height: 36px;
+  width: 36px;
+}
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__social img {
+  height: 64px;
+  width: 64px;
+  margin: 0 85px 0 0;
+}
+.headear__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
