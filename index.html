@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./progressbar.min.js"></script>
     <title>Resume</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
         <header class="header">
           <div class="headear__content">
             <div class="header__photo">
-              <img src="/images/avatar.jpg" alt="avatar" />
+              <img src="./images/avatar.jpg" alt="avatar" />
             </div>
             <div class="header__info">
               <div class="header__title">
@@ -22,29 +23,29 @@
                   <h2>Beginner <span>Frontend</span> Developer</h2>
                 </div>
                 <div class="header__title-contacts">
-                  <ul class="header_contacts-list">
+                  <ul class="header__contacts-list">
                     <li class="header__contacts-item">
                       <a href="#"
-                        ><img src="/images/Phone.png" alt="" srcset="" />
+                        ><img src="./images/Phone.png" alt="" srcset="" />
                         <p>+375257638796</p>
                       </a>
                     </li>
                     <li class="header__contacts-item">
                       <a href="https://t.me/eug_nik">
-                        <img src="/images/telegram.png" alt="" srcset="" />
+                        <img src="./images/telegram.png" alt="" srcset="" />
                         <p>Telegram</p>
                       </a>
                     </li>
                     <li class="header__contacts-item">
                       <a href="#"
-                        ><img src="/images/email.png" alt="" srcset="" />
+                        ><img src="./images/email.png" alt="" srcset="" />
                         <p>jenka26122@gmail.com</p></a
                       >
                     </li>
                     <li class="header__contacts-item">
                       <a href="#">
                         <img
-                          src="/images/3440906-direction-location-map-marker-navigation-pin_107531.png"
+                          src="./images/3440906-direction-location-map-marker-navigation-pin_107531.png"
                           alt=""
                           srcset=""
                         />
@@ -57,11 +58,33 @@
             </div>
           </div>
         </header>
+        <section class="aboutMe">
+          <h3><span>About</span> Me</h3>
+          <p>
+            Hi,My name is Yauheni and i am a beginner Frontend developer.I've
+            been developing landing pages and single-page application for my own
+            purposes.I don't have experience in commercial development, but,
+            currently, i am iproving my web development skils to find a job.My
+            goal is get a job offer and start my professional developer cereer
+            in the near future.
+          </p>
+        </section>
+        <section class="social">
+          <h3><span>Social</span> Networks</h3>
+         <div class="social__newtworks">
+           <a href="https://github.com/YauheniDubina"> <img src="./images/github.png" alt="" srcset=""></a>
+            <a href="https://vk.com/jenka2618"><img src="./images/vk.png" alt="" srcset=""></a>
+            <a href="https://www.linkedin.com/in/yauheni-dubina-9ab983129/"><img src="./images/linkedin.png" alt="" srcset=""></a>
+           <a href="https://www.facebook.com/profile.php?id=100023899583235"> <img src="./images/facebook.png" alt="" srcset=""></a>
+            <a href="https://www.instagram.com/eug_nik/"><img src="./images/inst.png" alt="" srcset=""></a>
+           <a href="https://twitter.com/Yauheni_Nik"> <img src="./images/twitter.png" alt="" srcset=""></a>
+         </div>
+        </section>
         <section class="codeExample">
           <h3><span>Code</span> Example</h3>
           <pre>
                  <code>
-  const test = document.querySelectorAll(".circle-container");
+  const progress = document.querySelectorAll(".circle-container");
   test.forEach((item) => {
     const circleBar = new ProgressBar.Circle(item, {
         color: "#1c2630",
@@ -79,35 +102,89 @@
             });</code>
              </pre>
         </section>
-        <section class="aboutMe">
-          <h3><span>About</span> Me</h3>
-          <p>
-            Hi,My name is Yauheni and i am a beginner Frontend developer.I've
-            been developing landing pages and single-page application for my own
-            purposes.I don't have experience in commercial development, but,
-            currently, i am iproving my web development skils to find a job.My
-            goal is get a job offer and start my professional developer cereer
-            in the near future.
-          </p>
-        </section>
+       
         <section class="skills">
-          <h3>Knowlage <span>Skills</span></h3>
-          <div class="knowlageSkills__content">
-            <div class="knowlageSkills__item"></div>
-            <div class="knowlageSkills__item"></div>
-            <div class="knowlageSkills__item"></div>
-            <div class="knowlageSkills__item"></div>
-            <div class="knowlageSkills__item"></div>
-            <div class="knowlageSkills__item"></div>
+          <h3>Knowladge <span>Skills</span></h3>
+          <div class="skills__content">
+            <div class="skills__item">
+              <div class="skills__circle-container html"></div>
+            </div>
+            <div class="skills__item ">
+              <div class="skills__circle-container css"></div>
+              
+            </div>
+            <div class="skills__item ">
+              <div class="skills__circle-container git"></div>
+            </div>
+            <div class="skills__item ">
+              <div class="skills__circle-container js"></div>
+            </div>
+            <div class="skills__item ">
+              <div class="skills__circle-container react"></div>
+            </div>
+            <div class="skills__item ">
+              <div class="skills__circle-container figma"></div>
+            </div>
           </div>
         </section>
         <section class="education">
-
+          <h3><span>Education</span></h3>
+          <div class="education__content">
+            <div class="education__school">
+              <img src="./images/scholl.png" alt="" srcset="">
+              <h4>High School at Brest</h4>
+            </div>
+            <div class="education__university">
+              <img src="./images/univer.png" >
+              <h4>Brest State Technical University</h4>
+              <p>engineer of information technology</p>
+            </div>
+            
+          </div>
         </section>
-        <section class="courses"></section>
-        <section class="languages"></section>
-        <section class="hobbys"></section>
-        <footer class="footer"></footer>
+        <section class="courses">
+          <h3>Courses <span>&</span> Languages</h3>
+          <div class="courses__lists">
+            
+            <ul class="courses__study">
+              <li>RS School</li>
+              <li>Youtube</li>
+              <li>Coursera</li>
+            </ul>
+            <ul class="courses__languages">
+              <li>English-A2</li>
+              <li>German-A2</li>
+              <li>Russian(native)</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="projects">
+          <h3><span>Projects</span> & <span>Certificates</spa></h3>
+          <div class="projects__content">
+            <div class="projects__content_portfolio">
+              <img src="./images/portfolio.jpg" alt="" srcset="">
+             <div class="projects__content-show">
+                
+                <a href="https://yauhenidubina.github.io/portfolio/" target="blank">open</a>
+             </div>
+            </div>
+            <div class="projects__content_resume">
+              <img src="./images/resume.jpg" alt="" srcset="">
+             <div class="projects__content-show">
+                
+              <a href="#">open</a>
+             </div>
+            </div>
+
+           
+          </div>
+        </section>
+        <footer class="footer">
+          <div></div>
+          <div class="footer__year"><p>2022 ©</p></div>
+          
+        </footer>
       </div>
     </div>
     <script type="module" src="./script.js"></script>
