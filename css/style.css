@@ -277,6 +277,7 @@ h3 {
   align-items: center;
   align-content: center;
   gap: 20px;
+  padding: 90px 0;
 }
 .education__school {
   text-align: center;
@@ -305,6 +306,7 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 40px 0;
 }
 .courses__languages {
   border-left: 3px solid #0178d6;
@@ -351,6 +353,8 @@ h3 {
   flex-wrap: wrap;
   gap: 10px;
   padding: 0 0 10px 0;
+  margin: 0 auto;
+  max-width: 800px;
 }
 .projects .projects__content > div {
   position: relative;
@@ -370,6 +374,15 @@ h3 {
   left: 0;
   padding: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(0px, -90px) rotate(0deg);
 }
 .projects .projects__content a {
   border-radius: 20px;
@@ -385,24 +398,13 @@ h3 {
   border-radius: 20px;
   background: #0178d6;
 }
-.projects .projects__content .projects__content-show {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: all 0.4s ease-in-out;
-  color: #fff;
-  transform: translate(0px, -90px) rotate(0deg);
-}
-.projects .projects__content_resume:hover .projects__content-show {
+.projects .projects__content > div:hover > div {
   opacity: 1;
   transform: translate(0px, 0px) rotate(0deg);
 }
-.projects .projects__content_portfolio:hover .projects__content-show {
-  opacity: 1;
-  transform: translate(0px, 0px) rotate(0deg);
+.projects .projects__content img {
+  width: 250px;
+  height: 170px;
 }
 
 .footer {
@@ -434,6 +436,9 @@ h3 {
   .header__contacts-list p {
     display: none;
   }
+  .education__content {
+    padding: 10px 0;
+  }
 }
 @media (max-width: 650px) {
   .header__title-name h1 {
@@ -452,6 +457,7 @@ h3 {
   .education__content {
     flex-direction: row;
     justify-content: center;
+    padding: 0;
   }
   .education__university img {
     height: 120px;
