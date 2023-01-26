@@ -87,7 +87,7 @@ h3 {
   padding: 15px 0 0 0;
   margin: 0 0 20px 0;
 }
-.wrapper {
+body {
   background-color: #1b5683;
 }
 .container {
@@ -265,15 +265,14 @@ h3 {
   h4 {
     font-size: 20px;
   }
- 
+
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     gap: 20px;
-   padding: 90px 0;
-    
+    padding: 90px 0;
   }
   &__school {
     text-align: center;
@@ -395,7 +394,7 @@ h3 {
       opacity: 1;
       transform: translate(0px, 0px) rotate(0deg);
     }
-    img{
+    img {
       width: 250px;
       height: 170px;
     }
